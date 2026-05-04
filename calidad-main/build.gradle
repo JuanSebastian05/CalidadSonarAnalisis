@@ -2,7 +2,7 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.5.8'
     id 'io.spring.dependency-management' version '1.1.7'
-    id 'org.sonarqube' version '6.0.1.5171'
+    id 'org.sonarqube' version '7.3.0.8198'
     id 'jacoco'
 }
 
@@ -56,10 +56,9 @@ tasks.named('test') {
 
 sonar {
     properties {
-        property "sonar.projectKey", "parcial"
-        property "sonar.projectName", "parcial"
-        property "sonar.host.url", "http://localhost:9000"
-        property "sonar.login", "squ_e7820b2eabd88cc187a8cd5ced600f576d587e92"
+        property "sonar.projectKey", "JuanSebastian05_CalidadSonarAnalisis"
+        property "sonar.organization", "juansebastian05-1"
+        property "sonar.host.url", "https://sonarcloud.io"
         property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
     }
 }
